@@ -49,13 +49,13 @@ func main() {
 	for i := 0; i < Q; i++ {
 		fmt.Fscanln(reader, &k, &v)
 		visited = make([]bool, N+1)
-		count := bfs(k, v)
+		count := BFS(k, v)
 		fmt.Fprintf(writer, "%d\n", count)
 	}
 	writer.Flush()
 }
 
-func bfs(k, v int) int {
+func BFS(k, v int) int {
 	count := 0
 	visited[v] = true
 	queue := []int{v}
