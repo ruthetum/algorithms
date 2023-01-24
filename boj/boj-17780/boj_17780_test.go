@@ -1,8 +1,9 @@
-package boj_17780
+package main
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 type TestCases struct {
